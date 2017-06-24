@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Postás játék</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+        <h1>Postás játék</h1>
+
+        <form>
+            <select id="postman-text">
+                <option value="">válassz...</option>
+                <option value="4-1">4.1</option>
+                <option value="4-2">4.2</option>
+                <option value="5-1">5.1</option>
+                <option value="5-2">5.2</option>
+                <option value="5-3">5.3</option>
+                <option value="6-1">6.1</option>
+                <option value="6-2">6.2</option>
+            </select>
+        </form>
+
+        <br>
+
+        <div id="postas"></div>
+
+        <br>
+
+        <button id="vege">Vége</button>
+        <span id="pont"><span>0</span> pont</span>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+                integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+                crossorigin="anonymous"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>

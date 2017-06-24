@@ -1,0 +1,27 @@
+body {
+    font-family: Arial;
+    padding: 30px;
+}
+
+#postas {
+    font-size: 1.5em;
+    line-height: 2em;
+}
+
+#vege {
+    font-size: 1.5em;
+    display: none;
+}
+
+#pont {
+    font-size: 1.5em;
+    display: none;
+}
+
+.vege span {
+    color: #f00;
+    cursor: pointer;
+}
+.vege span.megvan {
+    color: #0b0;
+}
