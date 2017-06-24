@@ -4,7 +4,9 @@ $(function() {
         $("#pont span").html($(".megvan").length + " / " + $("#postas span").length);
     }
 
-    $("#vege").on("click", function() {
+    $("#vege").on("click", function(event) {
+        event.preventDefault();
+
         $("#postas").addClass("vege");
         updateScore();
         $("#pont").show();
@@ -19,7 +21,7 @@ $(function() {
 
     $("#postman-text").on("change", function() {
         if ($("#postman-text").val()) {
-            $.get("data/" + $("#postman-text").val() + ".html", function(data) {
+            $.get("data/" + $("#postman-text").val() + ".html?v" + (new Date()).getTime(), function(data) {
                 $("#postas").removeClass("vege").html(data);
                 $("#pont").hide();
                 $("#vege").show();
