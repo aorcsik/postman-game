@@ -12,7 +12,11 @@ $(function() {
         $("#pont").show();
 
         $("#postas span").on("click", function(event) {
-            $(event.target).addClass("megvan");
+            if ($(event.target).is(".megvan")) {
+                $(event.target).removeClass("megvan");
+            } else {
+                $(event.target).addClass("megvan");
+            }
             updateScore();
         });
 
